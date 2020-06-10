@@ -5,4 +5,4 @@ This project is the bachelor project of Philip Martin and Timo Sturm, which was 
 The goal of the project was the development of a simulator which allows the evaluation of exploration policies for active model-free reinforcement learning techniques in dynamic environments. 
 The simulation environment should be based on the Maze problem known from the RL world, which changes dynamically during the training.
 
-A detailed documentation of the project (in German language) can be found in the file "documentation.pdf".
+A detailed documentation of the project (in German language) can be found in the file named [Dokumentation.pdf](Dokumentation.pdf).
