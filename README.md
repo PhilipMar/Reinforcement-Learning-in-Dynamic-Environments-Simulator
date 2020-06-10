@@ -1,5 +1,5 @@
-# Reinforcement-Learning-in-Dynamic-Environments-Simulator
-
+# Reinforcement Learning Simulator in Dynamic Environments 
+ 
 Authors:
-- Philip Martin
-- Timo Sturm
+* Philip Martin
+* Timo Sturm

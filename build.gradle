@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+// Compile java classes with `javac -parameters`, this allows to use reflections to get parameter names.
+apply plugin: 'java'
+compileJava {
+    options.compilerArgs << '-parameters'
+}
+
+javafx {
+    version = "14"
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.base', 'javafx.swing']
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'de.uni.ks.MazeSimulator'
+        )
+    }
+}
+
+group 'de.uni.ks'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/io.github.classgraph/classgraph
+    implementation group: 'io.github.classgraph', name: 'classgraph', version: '4.8.75'
+
+    implementation 'ch.obermuhlner:big-math:2.3.0'
+
+    // Test framework
+    testImplementation('org.junit.jupiter:junit-jupiter:5.6.2')
+}
+
+test {
+    useJUnitPlatform()
+}
