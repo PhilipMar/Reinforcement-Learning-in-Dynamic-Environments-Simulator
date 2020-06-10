@@ -153,6 +153,7 @@ public class Training {
                         Logger.addTextToGuiLog("Training has been finished", GuiMessageType.All);
                         isFinished = true;
                         handleRemainingThreads();
+                        System.out.println("\n--------- Finished Training ---------");
                         return false;
                     }
 

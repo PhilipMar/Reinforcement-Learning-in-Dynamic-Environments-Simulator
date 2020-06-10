@@ -84,7 +84,8 @@ public class MazeSimulator {
                 File file = new File(configPath);
                 Config config = ConfigManager.readConfig(file);
                 ConfigManager.validateConfig(config);
-
+                System.out.println("--------- Configuration was loaded successfully ---------\n");
+                System.out.println("--------- Start training ---------");
                 if (showUI) {
                     javafx.application.Application.launch(SimulatorPresenter.class, configPath);
                 } else {
