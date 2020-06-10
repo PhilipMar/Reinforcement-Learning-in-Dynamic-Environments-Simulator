@@ -10,7 +10,7 @@ The simulation environment is based on the maze problem and extends it by a syst
 A detailed documentation of the project (in German language) can be found in the file named [Dokumentation.pdf](Dokumentation.pdf).
 
 ## Quick Start
-Run the main method of the `MazeSimulator` class with the following programm arguments: 
+Run the main method of the `MazeSimulator` class with the following program arguments: 
 
 Without displaying the UI: `--config=demoConfig.cfg`
 
