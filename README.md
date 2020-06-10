@@ -1,4 +1,4 @@
-# Reinforcement Learning Simulator in Dynamic Environments 
+# Reinforcement Learning in Dynamic Environments Simulator
  
 This project is the bachelor project of Philip Martin and Timo Sturm, which was developed during the winter semester 19/20 at the University of Kassel in the department Intelligent Embedded Systems.
 
