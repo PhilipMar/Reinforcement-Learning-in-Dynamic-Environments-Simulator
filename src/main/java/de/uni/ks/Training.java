@@ -217,7 +217,9 @@ public class Training {
             if (changeLevelCriterion.isMet(this)) {
                 Logger.addTextToGuiLog(changeLevelCriterion.getClass().getSimpleName() + " triggered", GuiMessageType.Criteria);
                 Logger.addTextToMiscLogOfCurrentLevel(changeLevelCriterion.getClass().getSimpleName() + " triggered");
-                Logger.CurrentData.currentLevelData.setOccurredLevelAbortCriterion(changeLevelCriterion);
+                if (Logger.CurrentData.currentLevelData != null) {
+                    Logger.CurrentData.currentLevelData.setOccurredLevelAbortCriterion(changeLevelCriterion);
+                }
                 return true;
             }
 
@@ -244,7 +246,9 @@ public class Training {
             if (stopEpisodeCriterion.isMet(this)) {
                 Logger.addTextToGuiLog(stopEpisodeCriterion.getLoggerString() + " triggered", GuiMessageType.Criteria);
                 Logger.addTextToMiscLogOfCurrentEpisode(stopEpisodeCriterion.getClass().getSimpleName() + " triggered");
-                Logger.CurrentData.currentEpisodeData.setOccurredEpisodeStopCriterion(stopEpisodeCriterion);
+                if (Logger.CurrentData.currentEpisodeData != null) {
+                    Logger.CurrentData.currentEpisodeData.setOccurredEpisodeStopCriterion(stopEpisodeCriterion);
+                }
                 return true;
             }
         }
